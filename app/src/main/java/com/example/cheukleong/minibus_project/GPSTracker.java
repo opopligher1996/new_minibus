@@ -106,7 +106,7 @@ public class GPSTracker extends Service
             if(count==0)
             {
                 journeyid = String.valueOf(currentLocalTime.getTime())+CAR_ID;
-                send_journey_data();
+                send_journey_data(1);
                 count++;
             }
 
@@ -341,7 +341,7 @@ public class GPSTracker extends Service
                         send_endpoint_data(5);
                         journeyid = String.valueOf(currentLocalTime.getTime()) + CAR_ID;
                         show_journey();
-                        send_journey_data();
+                        send_journey_data(2);
                         arr_station = 0;
                         go_back = 1;
                     }
@@ -375,7 +375,7 @@ public class GPSTracker extends Service
                         send_endpoint_data(4);
                         journeyid = String.valueOf(currentLocalTime.getTime())+CAR_ID;
                         show_journey();
-                        send_journey_data();
+                        send_journey_data(1);
                         arr_station=0;
                         go_back=0;
                     }
@@ -661,7 +661,7 @@ public class GPSTracker extends Service
 
 
 
-    private void send_journey_data(){
+    private void send_journey_data(int route){
 
         Log.d(TAG, "send_journey_data: 2");
         DefaultHttpClient client = new DefaultHttpClient();
@@ -672,7 +672,7 @@ public class GPSTracker extends Service
             // Add your data
             List<NameValuePair> nameValuePairs = new ArrayList<NameValuePair>();
             nameValuePairs.add(new BasicNameValuePair("journeyid", journeyid));
-            nameValuePairs.add(new BasicNameValuePair("route", route));
+            nameValuePairs.add(new BasicNameValuePair("route", String.valueOf(route)));
 
             httppost.setEntity(new UrlEncodedFormEntity(nameValuePairs));
             Log.d("httppost: ",httppost.toString());

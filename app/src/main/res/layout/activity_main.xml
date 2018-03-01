@@ -1,0 +1,125 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="com.example.cheukleong.minibus_project.MainActivity">
+
+    <Button
+        android:id="@+id/show_button"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_above="@+id/startButton"
+        android:layout_centerHorizontal="true"
+        android:text="Show GPS"
+        tools:layout_editor_absoluteX="141dp"
+        tools:layout_editor_absoluteY="297dp" />
+
+    <Button
+        android:id="@+id/startButton"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_above="@+id/Change"
+        android:layout_toLeftOf="@+id/off_airplane"
+        android:layout_toRightOf="@+id/airplane"
+        android:text="Start"
+        tools:layout_editor_absoluteX="52dp"
+        tools:layout_editor_absoluteY="368dp" />
+
+    <Button
+        android:id="@+id/Change"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignLeft="@+id/startButton"
+        android:layout_alignParentBottom="true"
+        android:layout_marginBottom="40dp"
+        android:text="Change"
+        tools:layout_editor_absoluteX="236dp"
+        tools:layout_editor_absoluteY="368dp" />
+
+    <EditText
+        android:id="@+id/Car_ID"
+        android:layout_width="wrap_content"
+        android:layout_height="50dp"
+        android:layout_above="@+id/show_button"
+        android:layout_centerHorizontal="true"
+        android:ems="10"
+        android:inputType="textPersonName"
+        android:text="Car_ID" />
+
+    <TextView
+        android:id="@+id/Show_Location"
+        android:layout_width="wrap_content"
+        android:layout_height="200dp"
+        android:layout_above="@+id/back"
+        android:layout_alignLeft="@+id/Car_ID"
+        android:layout_alignParentTop="true"
+        android:layout_alignRight="@+id/Car_ID"
+        android:text="TextView"
+        android:textSize="18sp" />
+
+    <EditText
+        android:id="@+id/Route"
+        android:layout_width="wrap_content"
+        android:layout_height="50dp"
+        android:layout_above="@+id/Car_ID"
+        android:layout_alignLeft="@+id/Show_Location"
+        android:ems="10"
+        android:inputType="textPersonName"
+        android:text="Route" />
+
+    <Button
+        android:id="@+id/back"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_above="@+id/Route"
+        android:layout_alignRight="@+id/Route"
+        android:text="回程" />
+
+    <Button
+        android:id="@+id/go"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignLeft="@+id/Route"
+        android:layout_below="@+id/Show_Location"
+        android:text="去程" />
+
+    <Button
+        android:id="@+id/init"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_above="@+id/Route"
+        android:layout_below="@+id/Show_Location"
+        android:layout_toLeftOf="@+id/back"
+        android:layout_toRightOf="@+id/go"
+        android:text="G" />
+
+    <EditText
+        android:id="@+id/Dans"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/startButton"
+        android:layout_toRightOf="@+id/Change"
+        android:ems="10"
+        android:inputType="textPersonName|number"
+        android:text="30" />
+
+    <Button
+        android:id="@+id/airplane"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignBaseline="@+id/show_button"
+        android:layout_alignBottom="@+id/show_button"
+        android:layout_toLeftOf="@+id/show_button"
+        android:text="Airplane" />
+
+    <Button
+        android:id="@+id/off_airplane"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/Car_ID"
+        android:layout_toRightOf="@+id/show_button"
+        android:text="off_airplane" />
+
+</RelativeLayout>

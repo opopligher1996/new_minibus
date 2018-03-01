@@ -1,0 +1,55 @@
+{
+  "project_info": {
+    "project_number": "552548356034",
+    "firebase_url": "https://minibusproject-94497.firebaseio.com",
+    "project_id": "minibusproject-94497",
+    "storage_bucket": "minibusproject-94497.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:552548356034:android:8dfac72daaca434d",
+        "android_client_info": {
+          "package_name": "com.example.cheukleong.minibus_project"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "552548356034-8n8u9am5cqtpugai7hoe10jd2882alra.apps.googleusercontent.com",
+          "client_type": 1,
+          "android_info": {
+            "package_name": "com.example.cheukleong.minibus_project",
+            "certificate_hash": "00f14bb172adcb1f3766a6e9ff4e73a470e8ce8b"
+          }
+        },
+        {
+          "client_id": "552548356034-h894j0k549pgn2aoaubsrtth45qqb3m1.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyCIw3d7Tm2bc5CS4pX0c7ViHo6cVT8TCjk"
+        }
+      ],
+      "services": {
+        "analytics_service": {
+          "status": 1
+        },
+        "appinvite_service": {
+          "status": 2,
+          "other_platform_oauth_client": [
+            {
+              "client_id": "552548356034-h894j0k549pgn2aoaubsrtth45qqb3m1.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        },
+        "ads_service": {
+          "status": 2
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

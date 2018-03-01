@@ -115,7 +115,7 @@ public class GPSTracker extends Service
             update_location_x=location.getLatitude();
             update_location_y=location.getLongitude();
             update_time=currentLocalTime.getTime();
-            //send_location();
+            send_location();
 
 
 
